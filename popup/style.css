@@ -1,0 +1,68 @@
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+#btn-main{
+    padding: 2rem 3rem;
+    font-size: 1rem;
+    border: none;
+    background-color: bisque;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+#btn-main:hover{
+    opacity: .7;
+}
+
+.body-active{
+    background-color: rgba(121, 120, 120, 0.171);
+}
+
+.popup-container{
+    display: none;
+
+}
+
+.popup-container p
+ {
+    text-align: center;
+}
+
+.popup-active{
+    display: inline-block;
+    background-color: white;
+    padding: .9rem;
+    font-size: 1.5rem;
+    text-align: end;
+    border-radius: 8px;
+    
+}
+
+.btn-active{
+    display: none;
+}
+
+.popup-container button{
+    border: none;
+    background-color: white;
+    font-size: 1.5rem;
+    cursor: pointer;   
+
+}
+
