@@ -1,0 +1,34 @@
+
+:root{
+    --color: blanchedalmond;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--color);
+
+}
+
+button{
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    border: none;
+    background-color: pink;
+    font-family: inherit;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+button:hover{
+    opacity: .8;
+}
+
