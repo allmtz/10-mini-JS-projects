@@ -1,0 +1,48 @@
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    transition: background 0.3s linear;
+
+}
+
+.container{
+    text-align: center;
+    width: 60%;
+    transition: color 0.3s linear;
+ 
+}
+
+.btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(14, 13, 13);
+    margin: 10px;
+    transition: background 0.3 linear;
+}
+
+.btn-active{
+    background-color: rgb(255, 251, 251);
+
+}
+
+.body-active{
+    background-color: rgb(14, 13, 13);
+}
+
+.container-active{
+    color: white;
+}
