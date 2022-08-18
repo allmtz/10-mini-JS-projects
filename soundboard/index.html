@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soundboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <button onclick="playSound(this)">boom</button>
+    <button onclick="playSound(this)">clap</button>
+    <button onclick="playSound(this)">kick</button>
+    <button onclick="playSound(this)">ride</button>
+   
+<script>
+
+    const sounds =  {
+        'boom': new Audio('boom.wav'),
+        'clap': new Audio('clap.wav'),
+        'kick': new Audio('kick.wav'),
+        'ride': new Audio('ride.wav'),
+
+    }
+
+    function playSound(e){
+        stopSounds()
+        const soundType = e.innerText
+
+        sounds[soundType].currentTime = 0
+
+        sounds[soundType].play()
+        
+    }
+
+    function stopSounds(){
+        for(const sound in sounds){
+            sounds[sound].pause()
+            console.log(sounds[sound])
+        }
+
+    }
+
+</script>
+
+</body>
+</html>
