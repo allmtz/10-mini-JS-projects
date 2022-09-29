@@ -2,7 +2,7 @@
 
 ## 10 mini-JS projects that could be used as features in a larger project
 
-###auto-write-text
+### auto-write-text
 * A loop that prints out text to the screen letter by letter, a-la Mission Impossible
 
 ### background-changer
